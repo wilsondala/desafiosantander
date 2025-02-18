@@ -72,5 +72,6 @@ jobs:
           password: ${{ secrets.EMAIL_PASS }}
           subject: "Falha no CI/CD"
           body: "O pipeline falhou. Verifique os logs."
-          to: desenvolvedor@email.com
-          from: CI/CD Pipeline
+          from: dalawilson1244@gmail.com
+          to: dalakahango@hotmail.com
+          

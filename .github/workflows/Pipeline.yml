@@ -66,12 +66,11 @@ jobs:
       - name: Enviar notificação por e-mail
         uses: dawidd6/action-send-mail@v3
         with:
-          server_address: dalawilson1244@gmail.com
+          server_address: smtp.gmail.com
           server_port: 587
-          username: ${{ Wilson Ndembuza Dala }}
-          password: ${{ Minhavida@033 }}
+          username: ${{ secrets.EMAIL_USER }}
+          password: ${{ secrets.EMAIL_PASS }}
           subject: "Falha no CI/CD"
           body: "O pipeline falhou. Verifique os logs."
-          from: dalawilson1244@gmail.com
-          to: dalakahango@hotmail.com
-          
+          to: desenvolvedor@email.com
+          from: CI/CD Pipeline
